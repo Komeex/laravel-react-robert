@@ -1,0 +1,74 @@
+@import 'tailwindcss';
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Futuristic Dark Theme */
+    --background: 225 25% 5%;
+    --foreground: 210 40% 98%;
+
+    --card: 225 25% 8%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 225 25% 8%;
+    --popover-foreground: 210 40% 98%;
+
+    /* Neon Blue Primary */
+    --primary: 217 91% 60%;
+    --primary-foreground: 225 25% 5%;
+
+    /* Purple Secondary */
+    --secondary: 280 100% 70%;
+    --secondary-foreground: 225 25% 5%;
+
+    --muted: 225 25% 12%;
+    --muted-foreground: 215 20% 65%;
+
+    /* Neon Accent */
+    --accent: 280 100% 70%;
+    --accent-foreground: 225 25% 5%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 225 25% 15%;
+    --input: 225 25% 12%;
+    --ring: 217 91% 60%;
+
+    --radius: 0.75rem;
+
+    /* Glassmorphism */
+    --glass-bg: 225 25% 8% / 0.1;
+    --glass-border: 217 91% 60% / 0.2;
+    
+    /* Neon Glows */
+    --neon-blue: 217 91% 60%;
+    --neon-purple: 280 100% 70%;
+    --neon-cyan: 180 100% 50%;
+    
+    /* Gradients */
+    --gradient-cyber: linear-gradient(135deg, hsl(217 91% 60%) 0%, hsl(280 100% 70%) 100%);
+    --gradient-dark: linear-gradient(135deg, hsl(225 25% 8%) 0%, hsl(225 25% 5%) 100%);
+
+    --sidebar-background: 225 25% 6%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 217 91% 60%;
+    --sidebar-primary-foreground: 225 25% 5%;
+    --sidebar-accent: 225 25% 10%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 225 25% 15%;
+    --sidebar-ring: 217 91% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
