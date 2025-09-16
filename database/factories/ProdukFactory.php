@@ -19,6 +19,7 @@ class ProdukFactory extends Factory
         return [
             'nama' => $this->faker->word,
             'deskripsi' => $this->faker->sentence,
+            'kategori' => $this->faker->word,
             'harga' => $this->faker->randomFloat(2, 1000, 100000),
             'gambar' => $this->faker->imageUrl(640, 480, 'products', true), 
         ];
